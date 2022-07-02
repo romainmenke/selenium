@@ -8,8 +8,9 @@ require (
 	github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
-	github.com/golang/protobuf v1.3.4
-	github.com/google/go-cmp v0.3.0
+	github.com/golang/protobuf v1.5.2
+	github.com/google/go-cmp v0.5.8
 	github.com/mediabuyerbot/go-crx3 v1.3.1
-	golang.org/x/net v0.0.0-20190620200207-3b0461eec859 // indirect
+	golang.org/x/net v0.0.0-20220630215102-69896b714898 // indirect
+	google.golang.org/protobuf v1.28.0 // indirect
 )
