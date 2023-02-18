@@ -68,10 +68,7 @@ func (c *Connect) Start() error {
 		c.cmd.Args = append(c.cmd.Args, "--logfile", c.LogFile)
 	}
 	if c.QuitProcessUponExit && runtime.GOOS == "linux" {
-		c.cmd.SysProcAttr = &syscall.SysProcAttr{
-			// Deliver SIGTERM to process when we die.
-			Pdeathsig: syscall.SIGTERM,
-		}
+		c.cmd.SysProcAttr = &syscall.SysProcAttr{}
 	}
 
 	dir, err := ioutil.TempDir("", "selenium-sauce-connect")
